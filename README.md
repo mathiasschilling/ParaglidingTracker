@@ -1,5 +1,35 @@
 # Paragliding Tracker and Visualization (R)
 
+## Table of Contents
+1. [Introduction](#1-introduction)
+2. [Prerequisites and Setup](#2-prerequisites-and-setup)
+   - [Necessary Software and Packages](#necessary-software-and-packages)
+   - [Setting Up the Environment](#setting-up-the-environment)
+3. [Script Overview](#3-script-overview)
+   - [General Description](#general-description)
+   - [Main Functions and Their Roles](#main-functions-and-their-roles)
+4. [Function Descriptions](#4-function-descriptions)
+   - [File: "1_LoadData.R"](#file-1_loaddatar)
+   - [File: "2_ThermalsApp.R"](#file-2_thermalsappr)
+5. [Usage Instructions](#5-usage-instructions)
+   - [Overview](#overview)
+   - [Getting Started](#getting-started)
+   - [Running the First Script (1_LoadData.R)](#running-the-first-script-1_loaddatar)
+   - [Running the Second Script (2_ThermalsApp.R)](#running-the-second-script-2_thermalsappr)
+   - [Interacting with the Shiny App](#interacting-with-the-shiny-app)
+   - [Troubleshooting](#troubleshooting)
+6. [Examples and Screenshots](#6-examples-and-screenshots)
+   - [Example: Data Extraction and Processing](#example-data-extraction-and-processing)
+   - [Example: Visualization with Shiny](#example-visualization-with-shiny)
+   - [Screenshots](#screenshots)
+   - [Conclusion](#conclusion)
+7. [Troubleshooting and FAQs](#7-troubleshooting-and-faqs)
+8. [Contributing](#8-contributing)
+9. [License](#9-license)
+10. [Contact Information](#10-contact-information)
+11. [Shoutouts](#11-shoutouts)
+
+
 ## 1. Introduction
 
 This R script is developed to analyze and visualize paragliding flight data, e.g. from Skytraxx variometer records. It processes data sets including altitude, longitude, and latitude, offering useful analytics to understand paragliding patterns and behaviors.
