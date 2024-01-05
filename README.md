@@ -38,7 +38,7 @@ At its core, the script extracts and converts geographic coordinates and altitud
 
 The script utilizes R libraries like `dplyr` for data handling, `ggplot2` and `leaflet` for visualization, and `shiny` for building an interactive web application. These libraries facilitate efficient data processing and help in presenting the data in an accessible and visually clear manner.
 
-A notable function, `extract_lat_lon_alt`, interprets `igc` file data into longitudes and latitudes. For example, in a format like "B1408474717490N00919583EA0151301624", segments `2:7` represent the flight time, `8:9` are the latitude degrees, `10:14` the latitude minutes, `16:18` the longitude degrees, and `19:23` the longitude minutes. The altitude is encoded in the segment `32:35`.
+A notable function, `extract_lat_lon_alt`, interprets `igc` file data into longitudes and latitudes. For example, in a format like "B14084717490N00919583EA0151301624", segments `2:7` represent the flight time, `8:9` are the latitude degrees, `10:14` the latitude minutes, `16:18` the longitude degrees, and `19:23` the longitude minutes. The altitude is encoded in the segment `32:35`.
 
 Additionally, the `read_igc_files` function processes multiple flight records, aggregates data, and prepares it for in-depth analysis. It involves discretizing geographic coordinates and calculating mean altitude differences for each grid cell, aiding in the identification of thermals and sink areas.
 
@@ -233,7 +233,7 @@ Following these steps will allow you to fully utilize the capabilities of the R 
 
 **Input Data**:
 - IGC files containing raw data from paragliding flights, in my case with the following format:
-  B1645453303420S06036818WA011760117600000, where 
+  B1645453303420S06036818WA011760117600000, where segments `2:7` represent the flight time, `8:9` are the latitude degrees, `10:14` the latitude minutes, `16:18` the longitude degrees, and `19:23` the longitude minutes. The altitude is encoded in the segment `32:35`. Thus I parsed that information accordingly. If you face different formats, change the function to your needs!
 - Each file includes records of latitude, longitude, and altitude.
 
 **Processing Steps**:
